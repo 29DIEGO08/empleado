@@ -1,6 +1,5 @@
 package com.example.empleado.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.empleado.model.Empleado;
@@ -14,7 +13,7 @@ public class EmpleadoServicio {
 
     private final EmpleadoRepositorio empleadoRepositorio;
 
-    @Autowired
+    
     public EmpleadoServicio(EmpleadoRepositorio empleadoRepositorio) {
         this.empleadoRepositorio = empleadoRepositorio;
     }

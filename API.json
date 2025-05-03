@@ -1,0 +1,60 @@
+{
+    "info": {
+      "name": "Empleado API",
+      "description": "API para gestionar empleados",
+      "version": "1.0.0"
+    },
+    "requests": [
+      {
+        "name": "Obtener todos los empleados",
+        "method": "GET",
+        "url": "http://localhost:8080/api/empleados",
+        "headers": [],
+        "body": null
+      },
+      {
+        "name": "Obtener empleado por ID",
+        "method": "GET",
+        "url": "http://localhost:8080/api/empleados/{id}",
+        "headers": [],
+        "body": null
+      },
+      {
+        "name": "Crear empleado",
+        "method": "POST",
+        "url": "http://localhost:8080/api/empleados",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"edad\": 30,\n  \"puesto\": \"Desarrollador\"\n}"
+        }
+      },
+      {
+        "name": "Actualizar empleado",
+        "method": "PUT",
+        "url": "http://localhost:8080/api/empleados/{id}",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"edad\": 31,\n  \"puesto\": \"Senior Developer\"\n}"
+        }
+      },
+      {
+        "name": "Eliminar empleado",
+        "method": "DELETE",
+        "url": "http://localhost:8080/api/empleados/{id}",
+        "headers": [],
+        "body": null
+      }
+    ]
+  }

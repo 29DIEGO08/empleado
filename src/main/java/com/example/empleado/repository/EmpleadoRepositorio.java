@@ -7,5 +7,5 @@ import com.example.empleado.model.Empleado;
 
 @Repository
 public interface EmpleadoRepositorio extends JpaRepository<Empleado, Long> {
-    // Puedes agregar métodos de consulta personalizados si los necesitas
+    
 }
