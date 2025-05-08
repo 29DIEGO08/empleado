@@ -1,60 +1,139 @@
 {
     "info": {
-      "name": "Empleado API",
-      "description": "API para gestionar empleados",
-      "version": "1.0.0"
+      "name": "API Empleados",
+      "description": "Colección de peticiones para la API de empleados"
     },
-    "requests": [
+    "item": [
       {
         "name": "Obtener todos los empleados",
-        "method": "GET",
-        "url": "http://localhost:8080/api/empleados",
-        "headers": [],
-        "body": null
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/api/empleados",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "empleados"
+            ]
+          },
+          "header": []
+        },
+        "response": []
       },
       {
         "name": "Obtener empleado por ID",
-        "method": "GET",
-        "url": "http://localhost:8080/api/empleados/{id}",
-        "headers": [],
-        "body": null
+        "request": {
+          "method": "GET",
+          "url": {
+            "raw": "http://localhost:8080/api/empleados/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "empleados",
+              "1"
+            ]
+          },
+          "header": []
+        },
+        "response": []
       },
       {
-        "name": "Crear empleado",
-        "method": "POST",
-        "url": "http://localhost:8080/api/empleados",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        "name": "Crear nuevo empleado",
+        "request": {
+          "method": "POST",
+          "url": {
+            "raw": "http://localhost:8080/api/empleados",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "empleados"
+            ]
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"nombre\": \"Nuevo Empleado\",\n  \"email\": \"nuevo.empleado@example.com\",\n  \"departamento\": \"Desarrollo\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
           }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"edad\": 30,\n  \"puesto\": \"Desarrollador\"\n}"
-        }
+        },
+        "response": []
       },
       {
         "name": "Actualizar empleado",
-        "method": "PUT",
-        "url": "http://localhost:8080/api/empleados/{id}",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        "request": {
+          "method": "PUT",
+          "url": {
+            "raw": "http://localhost:8080/api/empleados/2",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "empleados",
+              "2"
+            ]
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"nombre\": \"Empleado Actualizado\",\n  \"email\": \"actualizado@example.com\",\n  \"departamento\": \"Soporte\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
           }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"edad\": 31,\n  \"puesto\": \"Senior Developer\"\n}"
-        }
+        },
+        "response": []
       },
       {
         "name": "Eliminar empleado",
-        "method": "DELETE",
-        "url": "http://localhost:8080/api/empleados/{id}",
-        "headers": [],
-        "body": null
+        "request": {
+          "method": "DELETE",
+          "url": {
+            "raw": "http://localhost:8080/api/empleados/3",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "empleados",
+              "3"
+            ]
+          },
+          "header": []
+        },
+        "response": []
       }
     ]
   }

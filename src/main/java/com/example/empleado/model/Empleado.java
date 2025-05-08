@@ -20,7 +20,7 @@ public class Empleado {
     private Long id;
 
     private String nombre;
-    private String apellido;
-    private String email;
-    // Puedes agregar más campos según tus necesidades
+    private String cargo;
+    private float salario;
+    
 }
